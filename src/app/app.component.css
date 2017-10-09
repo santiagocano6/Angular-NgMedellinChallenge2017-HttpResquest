@@ -1,0 +1,30 @@
+#main {
+  text-align: center;
+  background-color: #59db57;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+#main img {
+  opacity: 0.5;
+}
+
+#joke {
+  border-style: dashed;
+  border-radius: 10px;
+  border-width: 2px;
+
+  padding: 10px 0px;
+  margin: 0px 30px 0px 30px;
+
+  font-size: 20px;
+  opacity: 0.5;
+  padding: 15px 8px 15px 8px;
+}
+
+#bottom {
+  font-size: 15px;
+  margin-top: 20px;
+}
