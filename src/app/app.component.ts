@@ -15,6 +15,8 @@ export class AppComponent implements OnInit {
   constructor (private componentService: ComponentService) {}
 
   ngOnInit(): void {
+    this.getData();
+
     setInterval(() => {
        this.getData(); }, 5000);
   }
@@ -25,7 +27,8 @@ export class AppComponent implements OnInit {
         this.joke = nextJoke;
       },
       error => {
-        alert(error);
+        this.joke = `Error uncontrolled:  ${error}`;
+        console.log(error);
       }
     );
   }
